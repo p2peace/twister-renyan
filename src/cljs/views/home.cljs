@@ -45,7 +45,6 @@
 
 (defn home-page []
   [:div [:h2 "twister-renyan"]
-   [:div [:a {:href "#/about"} "go to about page"]]
    [:nav.userMenu
     [:ul
      [:li.userMenu-home.current
