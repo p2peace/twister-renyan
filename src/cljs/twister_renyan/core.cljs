@@ -54,9 +54,28 @@
 ;; -------------------------
 ;; Views
 
-
 (defn about-page []
   [:div [:h2 "About twister-renyan"]
+   [:div [:a {:href "#/"} "go to the home page"]]])
+
+(defn following-page []
+  [:div [:h2 "following users page"]
+   [:div [:a {:href "#/"} "go to the home page"]]])
+
+(defn login-page []
+  [:div [:h2 "Change account page"]
+   [:div [:a {:href "#/"} "go to the home page"]]])
+
+(defn network-page []
+  [:div [:h2 "Network status page"]
+   [:div [:a {:href "#/"} "go to the home page"]]])
+
+(defn options-page []
+  [:div [:h2 "Options page"]
+   [:div [:a {:href "#/"} "go to the home page"]]])
+
+(defn profile-page []
+  [:div [:h2 "Profile page"]
    [:div [:a {:href "#/"} "go to the home page"]]])
 
 (defn current-page []
@@ -72,6 +91,20 @@
 (secretary/defroute "/about" []
   (session/put! :current-page #'about-page))
 
+(secretary/defroute "/following" []
+  (session/put! :current-page #'following-page))
+
+(secretary/defroute "/login" []
+  (session/put! :current-page #'login-page))
+
+(secretary/defroute "/network" []
+  (session/put! :current-page #'network-page))
+
+(secretary/defroute "/options" []
+  (session/put! :current-page #'options-page))
+
+(secretary/defroute "/profile" []
+  (session/put! :current-page #'profile-page))
 
 ;; -------------------------
 ;; History

@@ -49,13 +49,13 @@
    [:nav.userMenu
     [:ul
      [:li.userMenu-home.current
-      [:a {:href "home.html"}
+      [:a {:href "#/"}
        [:span.selectable_theme.theme_original.label "Home"]
        [:span.selectable_theme.theme_nin.menu-news]]]
      [:li.userMenu-network.selectable_theme.theme_original.theme_nin
-      [:a.label {:href "network.html"} "Network"]]
+      [:a.label {:href "#/network"} "Network"]]
      [:li.userMenu-profile.selectable_theme.theme_original.theme_nin
-      [:a.label {:href "profile-edit.html"} "Profile"]]
+      [:a.label {:href "#/profile"} "Profile"]]
      [:li.userMenu-config
       [:a.userMenu-config-dropdown {:href "#"}
        [:div.config-menu.dialog-modal
@@ -65,11 +65,11 @@
           ]
          [:a.mini-profile-name {:href "#"} "Nobody Yet"]
          [:span.mini-profile-view "View"]]
-        [:a.dropdown-menu-item {:href "options.html"} "Options"]
-        [:a.dropdown-menu-item {:href "network.html"} "Network"]
-        [:a.dropdown-menu-item {:href "profile-edit.html"} "Accounts"]
-        [:a.dropdown-menu-item {:href "following.html"} "Following Users"]
-        [:a.dropdown-menu-item {:href "login.html"} "Change User"]
+        [:a.dropdown-menu-item {:href "#/options"} "Options"]
+        [:a.dropdown-menu-item {:href "#/network"} "Network"]
+        [:a.dropdown-menu-item {:href "#/profile"} "Accounts"]
+        [:a.dropdown-menu-item {:href "#/following"} "Following Users"]
+        [:a.dropdown-menu-item {:href "#/login"} "Change User"]
         [:a.dropdown-menu-item.promoted-posts-only.selectable_theme.theme_original.theme_calm
          {:href "#"} "Switch to Promoted Posts"]
         [:a.dropdown-menu-item.direct-messages.selectable_theme.theme_original.theme_calm
@@ -86,7 +86,7 @@
       [:a {:href "#"}
        [:span.messages-qtd {:style {:display "none"}} 0]]]
      [:li.userMenu-dhtindicator.selectable_theme.theme_calm
-      [:a {:href "network.html"}]]
+      [:a {:href "#/network"}]]
      ;; Search
      [:li.userMenu-search
       [:input.userMenu-search-field {:type "text" :placeholder "search"}]
@@ -125,7 +125,7 @@
          [:span.posts-count "&nbsp;"]
          [:span.label "Posts"]]]
        [:li
-        [:a.open-following-page {:href "following.html"}
+        [:a.open-following-page {:href "#/following"}
          [:span.following-count "&nbsp;"]
          [:span.label "Following"]]]
        [:li
