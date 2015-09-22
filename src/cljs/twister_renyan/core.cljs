@@ -5,6 +5,7 @@
               [goog.events :as events]
               [goog.history.EventType :as EventType]
               [twister-renyan.views.home :as home :refer [home-page]]
+              [twister-renyan.views.login :as login :refer [login-page]]
               [twister-renyan.views.templates :as templates
                :refer [post-area
                        loading-roller
@@ -60,10 +61,6 @@
 
 (defn following-page []
   [:div [:h2 "following users page"]
-   [:div [:a {:href "#/"} "go to the home page"]]])
-
-(defn login-page []
-  [:div [:h2 "Change account page"]
    [:div [:a {:href "#/"} "go to the home page"]]])
 
 (defn network-page []
