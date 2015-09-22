@@ -3,6 +3,8 @@
 ;; -------------------------
 ;; Components/Templates
 
+;; Home
+
 (defn post-area []
   [:div.post-area
    [:form.post-area-new
@@ -422,3 +424,28 @@
     [:div.following-config-method-buttons
      [:button.public-following "Public"]
      [:button.public-following.private "Private"]]]])
+
+;; Login
+
+(defn new-user-modal-template []
+  [:div#new-user-modal-template
+   [:div.warning
+    [:div.text
+     "A new user was created and it is being propagated to the network."
+     "Please do not close this window, this might take a few minutes."]
+    [:div.text.emphasis
+     "Your secret key is: "
+     [:span.secret-key]]
+    [:div.text
+     "It is highly recommended that you take this time to save your secret key."
+     "Print it, do a screenshot, use the camera in your phone or write it down "
+     "to a piece of paper."]
+    [:div.text
+     "The secret key will be needed to use this account from different computers."
+     "If you ever lose your secret key (remember: this is alpha software and it may "
+     "crash, causing loss of data) your nickname will be locked forever."
+     "There is no way to recover a lost key for twister accounts."]
+    [:div.text
+     "Please wait. The 'OK' button will be shown when process completes."]
+    [:div.text
+     [:button.login-created-user {:style {:display "none"}} "OK"]]]])
